@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgBookCover"
+                android:layout_width="400dp"
+                android:layout_height="380dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/btnAddtoCurrentlyReading2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:text="Currently Reading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnAddToAlreadyRead2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="50dp"
+                android:text="Already Read"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnWantToRead2" />
+
+            <Button
+                android:id="@+id/btnAddToFavorites2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="50dp"
+                android:text="Add to Favorites"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnAddToAlreadyRead2" />
+
+            <Button
+                android:id="@+id/btnWantToRead2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="50dp"
+                android:text="Want to Read"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnAddtoCurrentlyReading2" />
+
+            <TextView
+                android:id="@+id/BooknameTxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Book Name:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline7"
+                app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+            <TextView
+                android:id="@+id/txNameBook2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Die drei ???"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline7"
+                app:layout_constraintStart_toStartOf="@+id/guideline6" />
+
+            <TextView
+                android:id="@+id/txtAuthor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Author:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline8"
+                app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+            <TextView
+                android:id="@+id/nameAuthorTxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Max"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline8"
+                app:layout_constraintStart_toStartOf="@+id/guideline6" />
+
+            <TextView
+                android:id="@+id/txtPages2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Pages:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline9"
+                app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+            <TextView
+                android:id="@+id/txtPageNumbr2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="150"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline9"
+                app:layout_constraintStart_toStartOf="@+id/guideline6" />
+
+            <TextView
+                android:id="@+id/txtDesc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Description:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline11"
+                app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+            <TextView
+                android:id="@+id/txtLongDesc2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Long Description in here"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="@+id/guideline11" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="171dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="130dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="50dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="90dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="130dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_begin="170dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
