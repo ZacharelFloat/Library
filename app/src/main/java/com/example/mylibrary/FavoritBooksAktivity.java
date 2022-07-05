@@ -20,6 +20,6 @@ public class FavoritBooksAktivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false));
 
-        adapter.setBooks(Utils.getFavoriteBooks());
+        adapter.setBooks(Utils.getInstance(this).getFavoriteBooks());
     }
 }

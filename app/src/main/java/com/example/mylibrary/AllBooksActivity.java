@@ -1,13 +1,11 @@
 package com.example.mylibrary;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.os.Bundle;
-
-import java.util.ArrayList;
 
 public class AllBooksActivity extends AppCompatActivity {
     private RecyclerView booksRecView;
@@ -25,7 +23,7 @@ public class AllBooksActivity extends AppCompatActivity {
 
 
 
-        adapter.setBooks(Utils.getInstance().getAllBooks());
+        adapter.setBooks(Utils.getInstance(this).getAllBooks());
 
 
     }
